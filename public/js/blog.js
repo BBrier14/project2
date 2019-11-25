@@ -7,6 +7,9 @@ $(document).ready(function() {
     // Click events for the edit and delete buttons
     $(document).on("click", "button.delete", handlePostDelete);
     $(document).on("click", "button.edit", handlePostEdit);
+    //------------DELETE IF NOT FUNCTIONING---------//
+    postCategorySelect.on("change", handleCategoryChange);
+    //------------DELETE IF NOT FUNCTIONING---------//
     // Variable to hold our posts
     var posts;
   
@@ -30,6 +33,7 @@ $(document).ready(function() {
       if (authorId) {
         authorId = "/?author_id=" + authorId;
       }
+     
       $.get("/api/posts" + authorId, function(data) {
         console.log("Posts", data);
         posts = data;
@@ -41,6 +45,24 @@ $(document).ready(function() {
         }
       });
     }
+//-------------DELETE IF BROKEN-----------//
+    function getPostsTwo(category) {
+      var categoryString = category || "";
+      if (categoryString) {
+        categoryString = "/category/" + categoryString;
+      }
+      $.get("/api/posts" + categoryString, function(data) {
+        console.log("Posts", data);
+        posts = data;
+        if (!posts || !posts.length) {
+          displayEmpty();
+        }
+        else {
+          initializeRows();
+        }
+      });
+    }
+    //--------------DELETE IF BROKEN--------------//
   
     // This function does an API call to delete posts
     function deletePost(id) {
@@ -80,13 +102,23 @@ $(document).ready(function() {
       var newPostTitle = $("<h2>");
       var newPostDate = $("<small>");
       var newPostAuthor = $("<h5>");
-      newPostAuthor.text("Written by: Author name display is in next activity when we learn joins!");
+      newPostAuthor.text("Written by: Anon");
       newPostAuthor.css({
         float: "right",
         color: "blue",
         "margin-top":
         "-10px"
       });
+//------------DELETE IF NOT FUNCTIONING---------//
+var newPostCategory = $("<h5>");
+newPostCategory.text(post.category);
+newPostCategory.css({
+  float: "right",
+  "font-weight": "700",
+  "margin-top":
+  "-15px"
+});
+//------------DELETE IF NOT FUNCTIONING---------//
       var newPostCardBody = $("<div>");
       newPostCardBody.addClass("card-body");
       var newPostBody = $("<p>");
@@ -137,6 +169,11 @@ $(document).ready(function() {
       "'>here</a> in order to get started.");
       blogContainer.append(messageH2);
     }
-  
+//------------DELETE IF NOT FUNCTIONING---------//
+    function handleCategoryChange() {
+      var newPostCategory = $(this).val();
+      getPosts(newPostCategory);
+    }
+  //------------DELETE IF NOT FUNCTIONING---------//
   });
   
