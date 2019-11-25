@@ -25,6 +25,20 @@ module.exports = function(app) {
     });
   });
 
+  // DELETE IF NOT FUNCTIONAL
+   // Get route for returning posts of a specific category
+   app.get("/api/posts/category/:category", function(req, res) {
+    db.Post.findAll({
+      where: {
+        category: req.params.category
+      }
+    })
+      .then(function(dbPost) {
+        res.json(dbPost);
+      });
+  });
+  // DELETE IF NOT FUNCTIONAL
+
   // Get route for retrieving a single post
   app.get("/api/posts/:id", function(req, res) {
     db.Post.findOne({
@@ -39,7 +53,15 @@ module.exports = function(app) {
 
   // POST route for saving a new post
   app.post("/api/posts", function(req, res) {
-    db.Post.create(req.body).then(function(dbPost) {
+    // DELETE IF NOT FUNCTIONAL, FIX CHANGES
+    db.Post.create({
+      title: req.body.title,
+      body: req.body.body,
+      category: req.body.category
+    })
+     // DELETE IF NOT FUNCTIONAL, FIX CHANGES
+
+    .then(function(dbPost) {
       res.json(dbPost);
     });
   });
