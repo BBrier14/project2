@@ -42,3 +42,26 @@ button.submit {
     margin-top: 30px;
   }
   
+  .jumbotron {
+    background-color: white;
+    text-align: center;
+  }
+  
+  #biglogo {
+    height: 1200px;
+    margin-top: -310px;
+    margin-left: 15%;
+  }
+  
+  .nav {
+    background-color: orange;
+    color: white;
+    height: 50px;
+  }
+  
+  #smalllogo {
+    height: 100px;
+    width: 100px;
+    margin-top: -20px;
+    margin-bottom: -28px;
+  }
