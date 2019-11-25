@@ -53,8 +53,8 @@ button.submit {
     margin-left: 15%;
   }
   
-  .nav {
-    background-color: orange;
+  .navbar {
+    background-color: purple;
     color: white;
     height: 50px;
   }
@@ -64,4 +64,10 @@ button.submit {
     width: 100px;
     margin-top: -20px;
     margin-bottom: -28px;
+  }
+
+  body {
+    background-image: url("../images/shire.jpg");
+    background-size: cover;
+    background-attachment: fixed;
   }
