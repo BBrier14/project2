@@ -4,6 +4,10 @@ $(document).ready(function() {
     var titleInput = $("#title");
     var cmsForm = $("#cms");
     var authorSelect = $("#author");
+    //----------DELETE IF NOT FUNCTIONING-------------//
+    var postCategorySelect = $("#category");
+    postCategorySelect.val("Personal");
+    //----------DELETE IF NOT FUNCTIONING-------------//
     // Adding an event listener for when the form is submitted
     $(cmsForm).on("submit", handleFormSubmit);
     // Gets the part of the url that comes after the "?" (which we have if we're updating a post)
@@ -43,6 +47,9 @@ $(document).ready(function() {
           .val()
           .trim(),
         AuthorId: authorSelect.val()
+        //----------DELETE IF NOT FUNCTIONING-------------//
+        , category: postCategorySelect.val()
+        //----------DELETE IF NOT FUNCTIONING-------------//
       };
   
       // If we're updating a post run updatePost to update a post
@@ -83,6 +90,9 @@ $(document).ready(function() {
           titleInput.val(data.title);
           bodyInput.val(data.body);
           authorId = data.AuthorId || data.id;
+          //----------DELETE IF NOT FUNCTIONING-------------//
+          postCategorySelect.val(data.category);
+          //----------DELETE IF NOT FUNCTIONING-------------//
           // If we have a post with this id, set a flag for us to know to update the post
           // when we hit submit
           updating = true;
