@@ -104,4 +104,17 @@ button.submit {
     .my-4:after {
       right: 0;
     }
+
+    small {
+      font-size: 12px;
+    }
+
+    .card-body {
+      font-family: 'ZCOOL XiaoWei', serif;
+      background-color: rgb(207, 206, 207);
+    }
+
+    .card-header {
+      background-color: rgb(235, 231, 231);
+    }
   

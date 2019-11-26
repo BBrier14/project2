@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Empire RPG</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+      media="screen"
+      title="no title"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Blog - Express</title>
-  <!-- Latest compiled and minified CSS & JS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: purple;">
-        <img src="images/book.png" id="smalllogo" alt="notreddit">
-        <a class="navbar-brand" href="home.html">Welcome</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="form-group">
-                <select class="custom-select" id="category">
-                  <option selected value="">All Categories</option>
-                  <option value="Personal">Personal</option>
-                  <option value="Product Review">Product Review</option>
-                  <option value="Political">Political</option>
-                </select>
-              </div>
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="blog.html">Forum <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="author-manager.html">Users</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cms.html">Create New Post</a>
-            </li>
-          </ul>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: purple;"
+    >
+      <img src="images/book.png" id="smalllogo" alt="notreddit" />
+      <a class="navbar-brand" href="home.html">Welcome</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="form-group">
+          <select class="custom-select" id="category">
+            <option selected value="">All Categories</option>
+            <option value="Lord of the Rings">Lord of the Rings</option>
+            <option value="Game of Thrones">Game of Thrones</option>
+            <option value="Sea Exploration">Sea Exploration</option>
+            <option value="Haunted Dungeons">Haunted Dungeons</option>
+            <option value="Winter Mountains">Winter Mountains</option>
+            <option value="Dark Forests">Dark Forests</option>
+            <option value="Lost Cities">Lost Cities</option>
+          </select>
         </div>
-      </nav>
-  <div class="container blog">
-    <div class="row">
-      <div class="col-md-12 blog-container">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="blog.html"
+              >Forum <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="author-manager.html">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cms.html">Create New Post</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container blog">
+      <div class="row">
+        <div class="col-md-12 blog-container"></div>
       </div>
     </div>
-  </div>
-  <!-- Custom Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
-  <script src="js/blog.js" type="text/javascript"></script>
-
-</body>
-
+    <!-- Custom Script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/blog.js" type="text/javascript"></script>
+  </body>
 </html>

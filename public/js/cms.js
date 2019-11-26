@@ -6,7 +6,7 @@ $(document).ready(function() {
     var authorSelect = $("#author");
     //----------DELETE IF NOT FUNCTIONING-------------//
     var postCategorySelect = $("#category");
-    postCategorySelect.val("Personal");
+    postCategorySelect.val("Lord of the Rings");
     //----------DELETE IF NOT FUNCTIONING-------------//
     // Adding an event listener for when the form is submitted
     $(cmsForm).on("submit", handleFormSubmit);
