@@ -45,6 +45,11 @@ $(document).ready(function() {
         }
       });
     }
+
+    $( "#category").change(function() {
+      console.log($(this).val())
+      getPostsTwo($(this).val());
+    });
 //-------------DELETE IF BROKEN-----------//
     function getPostsTwo(category) {
       var categoryString = category || "";

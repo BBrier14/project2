@@ -28,6 +28,7 @@ module.exports = function(app) {
   // DELETE IF NOT FUNCTIONAL
    // Get route for returning posts of a specific category
    app.get("/api/posts/category/:category", function(req, res) {
+     console.log(req.params.category)
     db.Post.findAll({
       where: {
         category: req.params.category
