@@ -117,4 +117,11 @@ button.submit {
     .card-header {
       background-color: rgb(235, 231, 231);
     }
+
+    .authorentry {
+      background-color: rgb(207, 206, 207);
+      text-align: center;
+      padding-left: 1%;
+      padding-right: inherit;
+    }
   
