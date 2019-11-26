@@ -7,44 +7,65 @@
     <title>Not Reddit</title>
     <!-- Bootstrap -->
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
     />
-    <!-- Link to personal CSS Style Sheet-->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- Link to personal CSS Style Sheet-->
   </head>
   <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: purple;"
+    >
+      <img src="images/man.png" id="smalllogo" alt="notreddit" />
+      <a class="navbar-brand" href="home.html">Welcome</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="blog.html"
+              >Forum <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="author-manager.html">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cms.html">Create New Post</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: purple;">
-          <img src="images/notredditWOword.png" id="smalllogo" alt="notreddit">
-          <a class="navbar-brand" href="home.html">Welcome</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="blog.html">Forum <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="author-manager.html">Users</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cms.html">Create New Post</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        
     <div class="jumbotron">
       <h1 class="display-4">Welcome to Empire RPG!</h1>
       <p class="lead">
-        A place where you can be a knight on quest to save the kingdom, an assassin in a post-apocolyptic metropolis, a Jedi knight traveling through space at lightspeed, or anything else you can imagine!
+        A place where you can be a knight on quest to save the kingdom, an
+        assassin in a post-apocolyptic metropolis, a Jedi knight traveling
+        through space at lightspeed, or anything else you can imagine!
       </p>
       <hr class="my-4" />
-      <img src="images/notredditWOword.png" id="biglogo" alt="notreddit">
+      
     </div>
+    <div class="row">
+    <div class="col-md-6 col-md-offset-3"></div>
+    <img src="images/man.png" id="bigman" alt="notreddit" />
+    <img src="images/elf.png" id="bigelf" alt="notreddit" />
+    </div>
+  </div>
+    </body>
   </body>
 </html>
