@@ -7,9 +7,8 @@ $(document).ready(function() {
     // Click events for the edit and delete buttons
     $(document).on("click", "button.delete", handlePostDelete);
     $(document).on("click", "button.edit", handlePostEdit);
-    //------------DELETE IF NOT FUNCTIONING---------//
     postCategorySelect.on("change", handleCategoryChange);
-    //------------DELETE IF NOT FUNCTIONING---------//
+  
     // Variable to hold our posts
     var posts;
   
@@ -159,6 +158,8 @@ newPostCategory.css({
         .data("post");
       window.location.href = "/cms?post_id=" + currentPost.id;
     }
+
+
   
     // This function displays a message when there are no posts
     function displayEmpty(id) {
