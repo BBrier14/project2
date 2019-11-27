@@ -11,7 +11,6 @@ var db = require("../models");
 // Routes
 // =============================================================
 module.exports = function(app) {
-
   // GET route for getting all of the posts
   app.get("/api/posts", function(req, res) {
     var query = {};
@@ -26,17 +25,16 @@ module.exports = function(app) {
   });
 
   // DELETE IF NOT FUNCTIONAL
-   // Get route for returning posts of a specific category
-   app.get("/api/posts/category/:category", function(req, res) {
-     console.log(req.params.category)
+  // Get route for returning posts of a specific category
+  app.get("/api/posts/category/:category", function(req, res) {
+    console.log(req.params.category);
     db.Post.findAll({
       where: {
         category: req.params.category
       }
-    })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
+    }).then(function(dbPost) {
+      res.json(dbPost);
+    });
   });
   // DELETE IF NOT FUNCTIONAL
 
@@ -60,11 +58,11 @@ module.exports = function(app) {
       body: req.body.body,
       category: req.body.category
     })
-     // DELETE IF NOT FUNCTIONAL, FIX CHANGES
+      // DELETE IF NOT FUNCTIONAL, FIX CHANGES
 
-    .then(function(dbPost) {
-      res.json(dbPost);
-    });
+      .then(function(dbPost) {
+        res.json(dbPost);
+      });
   });
 
   // DELETE route for deleting posts
@@ -80,13 +78,11 @@ module.exports = function(app) {
 
   // PUT route for updating posts
   app.put("/api/posts", function(req, res) {
-    db.Post.update(
-      req.body,
-      {
-        where: {
-          id: req.body.id
-        }
-      }).then(function(dbPost) {
+    db.Post.update(req.body, {
+      where: {
+        id: req.body.id
+      }
+    }).then(function(dbPost) {
       res.json(dbPost);
     });
   });

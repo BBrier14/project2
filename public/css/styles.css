@@ -1,127 +1,126 @@
 button.submit {
-    float: right;
-  }
-  
-  form#cms {
-    margin-top: 50px;
-  }
-  
-  #cms textarea {
-    resize: none;
-  }
-  
-  .card-header button.delete,
-  button.edit {
-    float: right;
-    margin: 5px;
-  }
-  
-  .author-container {
-    margin-top: 50px;
-  }
-  
-  .author-list {
-    margin-top: 25px;
-  }
-  
-  .blog-container {
-    margin-top: 30px;
-  }
-  
-  .blog {
-    margin-top: 30px;
-  }
-  
-  #author-name {
-    width: 100%;
-    height: 35px;
-    margin-top: 5px;
-  }
-  
-  .top-30 {
-    margin-top: 30px;
-  }
-  
-  .jumbotron {
-    background-color: rgb(226, 224, 224);
-    text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    height: 300px;
-    font-family: 'ZCOOL XiaoWei', serif;
-  }
-  
-  #bigman {
-    height: 900px;
-    margin-top: -75px;
-    margin-left: 15%;
-  }
+  float: right;
+}
 
-  #bigelf {
-    height: 850px;
-    margin-top: -30px;
-    /* margin-left: 15%; */
-  }
-  
-  .navbar {
-    background-color: purple;
-    color: white;
-    height: 50px;
-  }
-  
-  #smalllogo {
-    height: 100px;
-    width: 100px;
-    margin-top: -80px;
-    margin-bottom: -28px;
-  }
+form#cms {
+  margin-top: 50px;
+}
 
-  body {
-    background-image: url("../images/shire.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-  }
+#cms textarea {
+  resize: none;
+}
 
+.card-header button.delete,
+button.edit {
+  float: right;
+  margin: 5px;
+}
 
-    .my-4 {
-      text-align: center;
-      display: block;
-      line-height: 1px;
-      height: 1px;
-      margin: 2rem 0;
-      background: #B3B04F;
-    }
-    .my-4:before, .una:after {
-      content: '\2021';
-      font-size: 2rem;
-      color: #B3B04F;
-      position: absolute;
-      transform: rotate(90deg);
-    }
-    .my-4:before {
-      left:0;
-    }
-    .my-4:after {
-      right: 0;
-    }
+.author-container {
+  margin-top: 50px;
+}
 
-    small {
-      font-size: 12px;
-    }
+.author-list {
+  margin-top: 25px;
+}
 
-    .card-body {
-      font-family: 'ZCOOL XiaoWei', serif;
-      background-color: rgb(207, 206, 207);
-    }
+.blog-container {
+  margin-top: 30px;
+}
 
-    .card-header {
-      background-color: rgb(235, 231, 231);
-    }
+.blog {
+  margin-top: 30px;
+}
 
-    .authorentry {
-      background-color: rgb(207, 206, 207);
-      text-align: center;
-      padding-left: 1%;
-      padding-right: inherit;
-    }
-  
+#author-name {
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+}
+
+.top-30 {
+  margin-top: 30px;
+}
+
+.jumbotron {
+  background-color: rgb(226, 224, 224);
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 300px;
+  font-family: "ZCOOL XiaoWei", serif;
+}
+
+#bigman {
+  height: 900px;
+  margin-top: -75px;
+  margin-left: 15%;
+}
+
+#bigelf {
+  height: 850px;
+  margin-top: -30px;
+  /* margin-left: 15%; */
+}
+
+.navbar {
+  background-color: purple;
+  color: white;
+  height: 50px;
+}
+
+#smalllogo {
+  height: 100px;
+  width: 100px;
+  margin-top: -80px;
+  margin-bottom: -28px;
+}
+
+body {
+  background-image: url("../images/shire.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.my-4 {
+  text-align: center;
+  display: block;
+  line-height: 1px;
+  height: 1px;
+  margin: 2rem 0;
+  background: #b3b04f;
+}
+.my-4:before,
+.una:after {
+  content: "\2021";
+  font-size: 2rem;
+  color: #b3b04f;
+  position: absolute;
+  transform: rotate(90deg);
+}
+.my-4:before {
+  left: 0;
+}
+.my-4:after {
+  right: 0;
+}
+
+small {
+  font-size: 12px;
+}
+
+.card-body {
+  font-family: "ZCOOL XiaoWei", serif;
+  background-color: rgb(207, 206, 207);
+}
+
+.card-header {
+  background-color: rgb(235, 231, 231);
+}
+
+.authorentry {
+  background-color: rgb(207, 206, 207);
+  text-align: center;
+  padding-left: 1%;
+  padding-right: inherit;
+}
