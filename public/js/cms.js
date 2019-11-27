@@ -142,3 +142,15 @@ $(document).ready(function() {
     }
   });
   
+  //-------------------MUSIC----------------------//
+  var audioElement = document.createElement("audio");
+  audioElement.setAttribute("src", "./music/Lord of the Rings Sound of The Shire.mp3");
+
+  // Theme Button
+  $(".theme-button").on("click", function() {
+    audioElement.play();
+  });
+  $(".pause-button").on("click", function() {
+    audioElement.pause();
+  });
+//-------------------MUSIC----------------------//
