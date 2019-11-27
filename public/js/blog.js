@@ -1,6 +1,17 @@
 $(document).ready(function() {
     /* global moment */
-  
+//-------------------MUSIC----------------------//
+    var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "./music/Lord of the Rings Sound of The Shire.mp3");
+
+        // Theme Button
+        $(".theme-button").on("click", function() {
+          audioElement.play();
+        });
+        $(".pause-button").on("click", function() {
+          audioElement.pause();
+        });
+  //-------------------MUSIC----------------------//
     // blogContainer holds all of our posts
     var blogContainer = $(".blog-container");
     var postCategorySelect = $("#category");
