@@ -178,11 +178,11 @@ $(document).ready(function() {
     var messageH2 = $("<h2>");
     messageH2.css({ "text-align": "center", "margin-top": "50px" });
     messageH2.html(
-      "No posts yet" +
+      "Create a new adventure!" +
         partial +
-        ", navigate <a href='/cms" +
+        " Click <a href='/cms" +
         query +
-        "'>here</a> in order to get started."
+        "'>here</a> to begin!"
     );
     blogContainer.append(messageH2);
   }

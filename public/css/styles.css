@@ -123,4 +123,29 @@ small {
   text-align: center;
   padding-left: 1%;
   padding-right: inherit;
+  width: 400px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: purple;
+}
+
+h2 {
+  background-color: rgb(207, 206, 207);
+  width: 800px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: purple;
+  margin-left: 15%;
+  margin-right: 25%;
+}
+
+.row {
+  margin-left: -18px;
+  margin-right: 35px;
+}
+
+#bigknight {
+  height: 900px;
+  margin-top: -380px;
+  margin-left: 45%;
 }
