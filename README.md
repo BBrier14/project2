@@ -1,4 +1,4 @@
-# project2
+# Empire RPG
 ## Overview
 The Empire RPG application is an online, text-based RPG Forum. Users can create a profile as an author and post stories to the category of their choosing. Users can also play music if they so choose. 
 ## How It Works
