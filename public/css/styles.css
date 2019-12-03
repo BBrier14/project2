@@ -149,3 +149,24 @@ h2 {
   margin-top: -380px;
   margin-left: 45%;
 }
+
+body {
+  font-family: "ZCOOL XiaoWei", serif;
+}
+
+.form-group {
+  background-color: rgb(207, 206, 207);
+  border-style: solid;
+  border-width: 2px;
+  border-color: purple;
+  margin-left: 10px;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#assassin {
+  height: 900px;
+  margin-top: -620px;
+  margin-left: 60%;
+}
