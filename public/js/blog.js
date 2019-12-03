@@ -113,7 +113,7 @@ $(document).ready(function() {
     var editBtn = $("<button>");
     editBtn.text("EDIT");
     editBtn.addClass("edit btn btn-info");
-    var newPostTitle = $("<h2>");
+    var newPostTitle = $("<h3>");
     var newPostDate = $("<small>");
     var newPostAuthor = $("<h5>");
     newPostAuthor.text("Written by: Anon");
