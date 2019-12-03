@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  /* global moment */
   //-------------------MUSIC----------------------//
   var audioElement = document.createElement("audio");
   audioElement.setAttribute(
@@ -186,10 +185,8 @@ $(document).ready(function() {
     );
     blogContainer.append(messageH2);
   }
-  //------------DELETE IF NOT FUNCTIONING---------//
   function handleCategoryChange() {
     var newPostCategory = $(this).val();
     getPosts(newPostCategory);
   }
-  //------------DELETE IF NOT FUNCTIONING---------//
 });

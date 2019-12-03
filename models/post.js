@@ -12,12 +12,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       len: [1]
     },
-    // DELETE IF NOT FUNCTIONAL
+
     category: {
       type: DataTypes.STRING,
       defaultValue: "Personal"
     }
-    // DELETE IF NOT FUNCTIONAL
   });
 
   Post.associate = function(models) {
